@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Deratizácia Desinsekcia a Dezinfekcia - Lukáš Račko{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
+    {% block css %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'core/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    {% endblock css %}
+
+    <link rel="shortcut icon" href="{% static 'core/images/1.jpg' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'core/ico/apple-touch-icon-144-precomposed.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'core/ico/apple-touch-icon-114-precomposed.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'core/ico/apple-touch-icon-72-precomposed.png' %}" />
+    <link rel="apple-touch-icon-precomposed" href="{% static 'core/ico/apple-touch-icon-57-precomposed.png' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'core/ico/favicon.ico' %}"/>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <p class="mb-0 phone pl-md-2">
+              <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +421 902 747 631</a> 
+              <a href="#"><span class="fa fa-paper-plane mr-1"></span> rackoddd@centrum.sk</a>
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-md-end">
+            <div class="social-media">
+              <p class="mb-0 d-flex">
+                <a href="https://www.facebook.com/RackoDDD/" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                <a href="#" target="_blank" class="d-flex align-items-center justify-content-center"><span class="fa fa-linkedin"><i class="sr-only">Linkedin</i></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include 'navbar.html' %}
+
+    {% block content %}
+    {% endblock content %}
+
+    <footer class="ic-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ic-footer-widget mb-4">
+              <h2 class="ic-heading-2 logo"><a href="{% url 'index-view' %}">Lukáš Račko-DDD</a></h2>
+              <ul class="ic-footer-social list-unstyled mt-2">
+                <li class="ic-animate"><a href="https://www.facebook.com/RackoDDD/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+                <li class="ic-animate"><a href="#" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ic-footer-widget mb-4 ml-md-4">
+              <ul class="list-unstyled font-pp">
+                <li><a href="{% url 'index-view' %}"><span class="fa fa-chevron-right mr-2"></span>Domov</a></li>
+                <li><a href="{% url 'o_mne' %}"><span class="fa fa-chevron-right mr-2"></span>O Mne</a></li>
+                <li><a href="{% url 'sluzby' %}"><span class="fa fa-chevron-right mr-2"></span>Služby</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ic-footer-widget mb-4 ml-md-4">
+              <ul class="list-unstyled font-pp">
+                <li><a href="{% url 'kontakt' %}"><span class="fa fa-chevron-right mr-2"></span>Kontakt</a></li>
+                <li><a href="{% url 'zasady-ochrany-osobnych-udajov' %}"><span class="fa fa-chevron-right mr-2">
+                  </span>Zásady ochrany osobných údajov</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ic-footer-widget mb-4">
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><a href="#"><span class="icon fa fa-map marker"></span><span class="text">Internátna 31, Banská Bystrica 97404 Slovensko</span></a></li>
+                  <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+421 902 747 631</span></a></li>
+                  <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">rackoddd@centrum.sk</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-4 bg-black">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© IČ All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- loader -->
+    <div id="ic-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      </svg>
+    </div>
+    {% block scripts %}
+    <!--<script src="{% static 'core/js/jquery.min.js' %}"></script>-->
+    <script src="{% static 'core/js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'core/js/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.stellar.min.js' %}"></script>
+    <script src="{% static 'core/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{% static 'core/js/scrollax.min.js' %}"></script>
+    <script src="{% static 'core/js/google-map.js' %}"></script>
+    <script src="{% static 'core/js/main.js' %}"></script>
+    {% endblock scripts %}
+  </body>
+</html>

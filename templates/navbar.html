@@ -1,0 +1,23 @@
+{% url 'index-view' as path_index %}
+{% url 'o_mne' as path_o_mne %}
+{% url 'sluzby' as path_sluzby %}
+{% url 'ukazky' as path_ukazky %}
+{% url 'blog' as path_blog %}
+{% url 'kontakt' as path_kontakt %}
+
+<nav class="navbar navbar-expand-lg navbar-dark ic_navbar bg-dark ic-navbar-light" id="ic-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'index-view' %}">Lukáš Račko-DDD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ic-nav" aria-controls="ic-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="oi oi-menu"></span> Menu
+    </button>
+    <div class="collapse navbar-collapse" id="ic-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="{% if request.path == path_index %}active{% endif %} nav-item"><a href="{% url 'index-view' %}" class="nav-link">DOMOV</a></li>
+        <li class="{% if request.path == path_o_mne %}active{% endif %} nav-item"><a href="{% url 'o_mne' %}" class="nav-link">O MNE</a></li>
+        <li class="{% if request.path == path_sluzby %}active{% endif %} nav-item"><a href="{% url 'sluzby' %}" class="nav-link">SLUŽBY</a></li>
+        <li class="{% if request.path == path_kontakt %}active{% endif %} nav-item"><a href="{% url 'kontakt' %}" class="nav-link">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

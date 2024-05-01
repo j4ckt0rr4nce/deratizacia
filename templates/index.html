@@ -1,0 +1,391 @@
+{% extends 'base.html' %}
+{% block title %}Deratizácia Desinsekcia a Dezinfekcia - Lukáš Račko{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="hero-wrap filtered" style="background-image: url({% static 'core/images/bg_1.jpg' %});" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-center">
+      <div class="col-md-6 ic-animate d-flex align-items-end">
+        <div class="text w-100">
+          <h1 class="mb-4 i-font">Deratizácia Desinsekcia a Dezinfekcia - Lukáš Račko</h1>
+          <p class="mb-4">Poskytujem profesionálne riešenia vašich problémov v oblasti deratizácie, desinsekcie, 
+            odstraňovania plesní a dezinfekcie.</p>
+          <p><a href="{% url 'kontakt' %}#mapa" class="btn btn-primary py-3 px-4 lol">Kontakt</a> <a id="index-more" class="btn btn-white py-3 px-4">Zistiť viac</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="ic-intro">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-4 d-flex">
+        <div class="intro aside-stretch d-lg-flex w-100">
+          <div class="icon">
+            <span class="flaticon-checklist"></span>
+          </div>
+          <div class="text">
+            <h2>100% Dôveryhodnosť</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="intro color-1 d-lg-flex w-100">
+          <div class="icon">
+            <span class="flaticon-employee"></span>
+          </div>
+          <div class="text">
+            <h2>Spoľahlivosť</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex">
+        <div class="intro color-2 d-lg-flex w-100">
+          <div class="icon">
+            <span class="flaticon-umbrella"></span>
+          </div>
+          <div class="text">
+            <h2>Individuálny Prístup</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-7 heading-section text-center ic-animate">
+        <span class="subheading">Služby</span>
+        <h2>Ako to funguje</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-stretch ic-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-calendar"></span>
+            </div>
+          </div>
+          <h2>Vytvoríme plán</h2>
+          <p>V závislosti na vami požadovanej službe vytvoríme plán podľa vašich kritérií a požiadaviek.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-stretch ic-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-qa"></span>
+            </div>
+          </div>
+          <h2>Zahájime diskusiu</h2>
+          <p>Počas práce na vami vybranej službe budeme neustále v kontakte a v rámci diskusie sa zameriame na detaily plánu.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-stretch ic-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <div class="number d-flex align-items-center justify-content-center"><span>03</span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-checklist"></span>
+            </div>
+          </div>
+          <h2>Naplníme plán</h2>
+          <p>Zameriame sa postupne na všetky body vašich požiadaviek poďľa navrhnutého plánu až po jeho naplnenie.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section ic-no-pb ic-no-pt rad">
+  <div class="container">
+    <div class="row ic-sample">
+      <div class="rad-profile col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url({% static 'core/images/profile.jpg' %});">
+      </div>
+      <div class="col-md-6 wrap-about px-md-5 ic-animate py-5 bg-light">
+        <div class="heading-section py-md-5">
+          <span class="subheading">O MNE</span>
+          <h2 class="mb-3">Lukáš Račko-DDD</h2>
+          <p class="mb-2 contact-info"><em>Jednateľ</em></p>
+          <p class="mb-2 contact-info"><em>+421 902 747 631</em></p>
+          <p class="mb-4 contact-info"><em>rackoddd@centrum.sk</em></p>
+          <p>IČO - 46348077
+          </p>
+          <p>DIČ - 1082363887
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 text-center heading-section ic-animate">
+        <span class="subheading">Služby</span>
+        <h2 class="mb-3">Pomôcť vám môžem s nasledujúcimi službami</h2>
+      </div>
+    </div>
+    <div class="row tabulation mt-4 ic-animate">
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+          <li class="nav-item text-left">
+            <a class="nav-link active py-4" data-toggle="tab" href="#services-1">Dezinsekcia obtiažneho hmyzu</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-2">Deratizácia hlodavcov</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-3">Likvidácia osích a sršních hniezd</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-4">Ničenie baktérií a plesní</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-5">Dezinfekcia a vypratanie bytu po zosnulom</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-6">Dezinfekcia po vtáčom truse</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <div class="tab-content">
+          <div class="tab-pane container p-0 active" id="services-1">
+            <div class="img" style="background-image: url({% static 'core/images/index-services-plostice.jpg' %});"></div>
+            <h3><a href="#">Dezinsekcia obtiažneho hmyzu</a></h3>
+            <p>Dezinsekcia je súbor opatrení vykonávaných chemickými, biologickými a fyzikálnymi metódami s cieľom ničiť škodlivé, 
+              epidemiologicky a ekonomicky obťažujúce článkonožce - hmyz (šváby, blchy, ploštice, mravce, muchy a pod.). Základom 
+              úspešnej kontroly škodcov je program, ktorý sa riadi systematickým plánom. Súčasťou plánu je aj stanovenie harmonogramu 
+              pravidelného monitorovania a stanovenie rozsahu, objemu a formy zásahu na základe hodnotenia.
+            </p>
+          </div>
+          <div class="tab-pane container p-0 fade" id="services-2">
+            <div class="img" style="background-image: url({% static 'core/images/index-services-hlodavce.jpg' %});"></div>
+            <h3><a href="#">Deratizácia hlodavcov</a></h3>
+            <p>Deratizácia je systém na hubenie škodlivých hlodavcov (potkany, myši, krysi, kuny atď.). Pod pojmom deratizácia sa rozumie 
+              súbor opatrení zameraných na likvidáciu zdravie ohrozujúcich a ekonomicky škodlivých hlodavcov s cieľom chrániť ľudské 
+              zdravie a predchádzať ekonomickým stratám spôsobeným hlodavcami. Odporúčame minimálne dva deratizačné zásahy ročne, 
+              na jar a na jeseň.
+            </p>
+          </div>
+          <div class="tab-pane container p-0 fade" id="services-3">
+            <div class="img" style="background-image: url({% static 'core/images/index-services-osy.jpg' %});"></div>
+            <h3><a href="#">Likvidácia osích a sršních hniezd</a></h3>
+            <p>Aplikuje sa predovšetkým s cieľom likvidovať hospodársky škodlivý hmyz (osy, sršne), ktorý pôsobí škody na 
+              majetku, prípadne je svojou prítomnosťou obťažujúci. Používam špeciálne prostriedky, s ktorými sa viem dostať 
+              k hniezdu aj na miesta s ťažkým prístupom. Po zásahu s chemickými prostriedkami je možnosť sa vzájomne 
+              dohodnúť aj na mechanickom odstránení hniezda.
+            </p>
+          </div>
+          <div class="tab-pane container p-0 fade" id="services-4">
+            <div class="img" style="background-image: url({% static 'core/images/index-services-plesne.jpg' %});"></div>
+            <h3><a href="#">Ničenie baktérií a plesní</a></h3>
+            <p>Dezinfekcia je súbor opatrení, ktorý vedie k likvidácii choroboplodných zárodkov, nežiaducich mikroorganizmov, 
+              baktérií, vírusov, húb a plesní. Na výkon dezinfekcie používam chemické alebo kombinované postupy a metódy, ktoré 
+              vedú k prerušeniu cesty nákazy od vzniknutého zdroja.
+            </p>
+          </div>
+          <div class="tab-pane container p-0 fade" id="services-5">
+            <div class="img" style="background-image: url({% static 'core/images/index-services-priestory.jpg' %});"></div>
+            <h3><a href="#">Dezinfekcia a vypratanie bytu po zosnulom</a></h3>
+            <p>Po úmrtí člena rodiny zabezpečíme po zosnulom dezinfekciu obytných priestorov a v prípade záujmu 
+              aj ich kompletné vypratanie. Firemným aj privátnym zákazníkom zaručujeme absolútnu diskrétnosť.
+            </p>
+          </div>
+          <div class="tab-pane container p-0 fade" id="services-6">
+            <div class="img" style="background-image: url({% static 'core/images/index-services-trus.jpg' %});"></div>
+            <h3><a href="#">Dezinfekcia po vtáčom truse</a></h3>
+            <p>Súbor opatrení na základe mechanického odstraňovania vtáčieho trusu a následnej dezinfekcie kontaminovaných 
+              priestorov. Dezinfekčné služby sa vzťahujú na reštauračné zariadenia, priemyselné objekty, 
+              byty a domy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section testimony-section">
+  <div class="img img-bg border" style="background-image: url({% static 'core/images/bg_3.jpg' %});"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center heading-section heading-section-white ic-animate">
+        <span class="subheading">Špecializácia</span>
+        <h2 class="mb-3">Špecializujem sa na:</h2>
+      </div>
+    </div>
+    <div class="row ic-animate">
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel ic-owl">
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/drf.jpg' %});"></div>
+                  <p class="name ">Ploštice</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/flask.jpg' %});"></div>
+                  <p class="name ">Blchy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/numpy.jpg' %});"></div>
+                  <p class="name">Osi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/pandas.jpg' %});"></div>
+                  <p class="name">Komáre</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/matplotlib.jpg' %});"></div>
+                  <p class="name">Mravce</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/seaborn.jpeg' %});"></div>
+                  <p class="name">Cvrčky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/mysql.jpg' %});"></div>
+                  <p class="name">Chrobáky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/postgresql.jpg' %});"></div>
+                  <p class="name">Sršne</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/sqlite.jpg' %});"></div>
+                  <p class="name">Hlodavce</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/jinja.jpg' %});"></div>
+                  <p class="name">Kuny</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/django.jpg' %});"></div>
+                  <p class="name ">Šváby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-appointment ic-section img" style="background-image: url({% static 'core/images/bg_2.jpg' %});">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 half ic-animate">
+        <div id="alert-box"></div>
+        <h2 class="mb-4">Ak máte otázky pošlite mi správu!</h2>
+        <form action="" method="POST" class="appointment" id="confirmform">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                {{ form.name }}
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                {{ form.email }}
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="form-field">
+                  <div class="select-wrap">
+                    <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                    {{ form.service }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                {{ form.message }}
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="submit" value="Odoslať správu" class="btn btn-primary py-3 px-4">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

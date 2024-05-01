@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block title %}Služby{% endblock %}
+{% load static %}
+
+{% block content %}
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'core/images/bg_4.jpg' %});" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-end justify-content-center">
+      <div class="col-md-9 ic-animate mb-5 text-center">
+        <p class="breadcrumbs mb-0"><span class="mr-2"><a href="{% url 'index-view' %}">Domov <i class="fa fa-chevron-right"></i></a></span> <span>Služby <i class="fa fa-chevron-right"></i></span></p>
+        <h1 class="mb-0 bread">Služby</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-7 heading-section text-center ic-animate">
+        <span class="subheading">Služby</span>
+        <h2>Ako to funguje</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 d-flex align-items-stretch ic-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-calendar"></span>
+            </div>
+          </div>
+          <h2>Vytvoríme plán</h2>
+          <p>V závislosti na vami požadovanej službe vytvoríme plán podľa vašich kritérií a požiadaviek.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-stretch ic-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-qa"></span>
+            </div>
+          </div>
+          <h2>Zahájime diskusiu</h2>
+          <p>Počas práce na vami vybranej službe budeme neustále v kontakte a v rámci diskusie sa zameriame na detaily plánu.</p>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex align-items-stretch ic-animate">
+        <div class="services-2 text-center">
+          <div class="icon-wrap">
+            <div class="number d-flex align-items-center justify-content-center"><span>03</span></div>
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="flaticon-checklist"></span>
+            </div>
+          </div>
+          <h2>Naplníme plán</h2>
+          <p>Zameriame sa postupne na všetky body vašich požiadaviek poďľa navrhnutého plánu až po jeho naplnenie.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center pb-5">
+      <div class="col-md-10 heading-section text-center ic-animate">
+        <span class="subheading">Služby</span>
+        <h2>Pomôcť vám môžem s nasledujúcimi službami</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid px-0">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <div class="services-wrap d-flex h-100">
+          <div class="img special-wrap" style="background-image: url({% static 'core/images/index-services-plostice.jpg' %});"></div>
+          <div class="text">
+            <h2 class="s-font">Dezinsekcia obtiažneho hmyzu</h2>
+            <p>Dezinsekcia je súbor opatrení vykonávaných chemickými, biologickými a fyzikálnymi metódami s cieľom ničiť škodlivé, 
+              epidemiologicky a ekonomicky obťažujúce článkonožce - hmyz (šváby, blchy, ploštice, mravce, muchy a pod.). Základom 
+              úspešnej kontroly škodcov je program, ktorý sa riadi systematickým plánom. Súčasťou plánu je aj stanovenie harmonogramu 
+              pravidelného monitorovania a stanovenie rozsahu, objemu a formy zásahu na základe hodnotenia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-wrap d-flex h-100">
+          <div class="img special-wrap" style="background-image: url({% static 'core/images/index-services-hlodavce.jpg' %});"></div>
+          <div class="text">
+            <h2 class="s-font">Deratizácia hlodavcov</h2>
+            <p>Deratizácia je systém na hubenie škodlivých hlodavcov (potkany, myši, krysi, kuny atď.). Pod pojmom deratizácia sa rozumie 
+              súbor opatrení zameraných na likvidáciu zdravie ohrozujúcich a ekonomicky škodlivých hlodavcov s cieľom chrániť ľudské 
+              zdravie a predchádzať ekonomickým stratám spôsobeným hlodavcami. Odporúčame minimálne dva deratizačné zásahy ročne, 
+              na jar a na jeseň.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-wrap d-flex h-100">
+          <div class="img order-md-last special-wrap" style="background-image: url({% static 'core/images/index-services-osy.jpg' %});"></div>
+          <div class="text">
+            <h2 class="s-font">Likvidácia osích a sršních hniezd</h2>
+            <p>Aplikuje sa predovšetkým s cieľom likvidovať hospodársky škodlivý hmyz (osy, sršne), ktorý pôsobí škody na 
+              majetku, prípadne je svojou prítomnosťou obťažujúci. Likvidácia s použitím chemnických prostriedkov sa vzťahuje aj
+              na ťažko dostuné miesta. Po zásahu s chemickými prostriedkami je možnosť sa vzájomne 
+              dohodnúť aj na mechanickom odstránení hniezda.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-wrap d-flex h-100">
+          <div class="img order-md-last special-wrap" style="background-image: url({% static 'core/images/index-services-plesne.jpg' %});"></div>
+          <div class="text">
+            <h2 class="s-font">Ničenie baktérií a plesní</h2>
+            <p>Dezinfekcia je súbor opatrení, ktorý vedie k likvidácii choroboplodných zárodkov, nežiaducich mikroorganizmov, 
+              baktérií, vírusov, húb a plesní. Na výkon dezinfekcie používam chemické alebo kombinované postupy a metódy, ktoré 
+              vedú k prerušeniu cesty nákazy od vzniknutého zdroja.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-wrap d-flex h-100">
+          <div class="img media-special-wrap" style="background-image: url({% static 'core//images/index-services-priestory.jpg' %});"></div>
+          <div class="text">
+            <h2 class="s-font">Dezinfekcia a vypratanie bytu po zosnulom</h2>
+            <p>Po úmrtí člena rodiny zabezpečíme po zosnulom dezinfekciu obytných priestorov a v prípade záujmu 
+              aj ich kompletné vypratanie. Firemným aj privátnym zákazníkom zaručujeme absolútnu diskrétnosť.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-wrap d-flex h-100">
+          <div class="img" style="background-image: url({% static 'core/images/index-services-trus.jpg' %});"></div>
+          <div class="text">
+            <h2 class="s-font">Dezinfekcia po vtáčom truse</h2>
+            <p>Súbor opatrení na základe mechanického odstraňovania vtáčieho trusu a následnej dezinfekcie kontaminovaných 
+              priestorov. Dezinfekčné služby sa vzťahujú na reštauračné zariadenia, priemyselné objekty, 
+              byty, domy a podkrovia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

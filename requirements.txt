@@ -1,0 +1,14 @@
+asgiref
+astroid
+Django
+isort
+lazy-object-proxy
+mccabe
+numpy
+Pillow
+pylint
+pytz
+six
+sqlparse
+toml
+wrapt

@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% block title %}O Mne{% endblock %}
+{% load static %}
+
+{% block content %}
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'core/images/bg_4.jpg' %});" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-end justify-content-center">
+      <div class="col-md-9 ic-animate mb-5 text-center">
+        <p class="breadcrumbs mb-0"><span class="mr-2"><a href="{% url 'index-view' %}">Domov <i class="fa fa-chevron-right"></i></a></span> <span>O Mne <i class="fa fa-chevron-right"></i></span></p>
+        <h1 class="mb-0 bread">O Mne</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section">
+  <div class="container">
+    <div class="row ic-sample">
+      <div class="rad-profile col-md-6 img d-flex justify-content-center align-items-center" style="background-image: url({% static 'core/images/profile.jpg' %});">
+      </div>
+      <div class="col-md-6 wrap-about px-md-5 ic-animate py-5 bg-light">
+        <div class="heading-section py-md-5">
+          <span class="subheading">O MNE</span>
+          <h2 class="mb-3">Lukáš Račko-DDD</h2>
+          <p class="mb-2 contact-info"><em>Jednateľ</em></p>
+          <p class="mb-2 contact-info"><em>+421 902 747 631</em></p>
+          <p class="mb-4 contact-info"><em>rackoddd@centrum.sk</em></p>
+          <p>IČO - 46348077
+          </p>
+          <p>DIČ - 1082363887
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-counter ic-section ic-no-pt ic-no-pb img bg-light" id="section-counter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-18 col-lg-4 justify-content-center counter-wrap ic-animate">
+        <div class="block-18 py-4 mb-4">
+          <div class="text align-items-center">
+            <span>„Úspešný človek profituje zo svojich chýb a skúša to znova a inak.“ - Dale Cargenie</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-section testimony-section">
+  <div class="img img-bg border" style="background-image: url({% static 'core/images/bg_3.jpg' %});"></div>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center heading-section heading-section-white ic-animate">
+        <span class="subheading">Špecializácia</span>
+        <h2 class="mb-3">Špecializujem sa na:</h2>
+      </div>
+    </div>
+    <div class="row ic-animate">
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel ic-owl">
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/drf.jpg' %});"></div>
+                  <p class="name ">Ploštice</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/flask.jpg' %});"></div>
+                  <p class="name ">Blchy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/numpy.jpg' %});"></div>
+                  <p class="name">Osi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/pandas.jpg' %});"></div>
+                  <p class="name">Komáre</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/matplotlib.jpg' %});"></div>
+                  <p class="name">Mravce</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/seaborn.jpeg' %});"></div>
+                  <p class="name">Cvrčky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/mysql.jpg' %});"></div>
+                  <p class="name">Chrobáky</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/postgresql.jpg' %});"></div>
+                  <p class="name">Sršne</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/sqlite.jpg' %});"></div>
+                  <p class="name">Hlodavce</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/jinja.jpg' %});"></div>
+                  <p class="name">Kuny</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap py-4">
+              <div class="text">
+                <div class="d-flex align-items-center">
+                  <div class="user-img" style="background-image: url({% static 'core/images/django.jpg' %});"></div>
+                  <p class="name ">Šváby</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ic-appointment ic-section img" style="background-image: url({% static 'core/images/bg_2.jpg' %});">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 half ic-animate">
+        <div id="alert-box"></div>
+        <h2 class="mb-4">Ak máte otázky pošlite mi správu!</h2>
+        <form action="" method="POST" class="appointment" id="confirmform">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                {{ form.name }}
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                {{ form.email }}
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="form-field">
+                  <div class="select-wrap">
+                    <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                    {{ form.service }}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                {{ form.message }}
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="submit" value="Odoslať správu" class="btn btn-primary py-3 px-4">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}
